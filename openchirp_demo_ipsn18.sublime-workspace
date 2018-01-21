@@ -1,0 +1,874 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gw",
+				"gw_received_ok_output"
+			],
+			[
+				"rx",
+				"rx_timestamp"
+			],
+			[
+				"get",
+				"get_rx_timestamp_u64"
+			],
+			[
+				"rx_",
+				"rx_timestamp"
+			],
+			[
+				"frame_",
+				"frame_count"
+			],
+			[
+				"cir",
+				"cir_struct"
+			],
+			[
+				"max",
+				"max_frame_count"
+			],
+			[
+				"frame",
+				"frame_count"
+			],
+			[
+				"_num",
+				"_num_states"
+			],
+			[
+				"ch",
+				"choice"
+			],
+			[
+				"rando",
+				"random"
+			],
+			[
+				"prob",
+				"prob_not_norm"
+			],
+			[
+				"actio",
+				"actions_with_path"
+			],
+			[
+				"_nu",
+				"_num_states"
+			],
+			[
+				"paths",
+				"paths_with_state"
+			],
+			[
+				"agen",
+				"agent_current_output"
+			],
+			[
+				"estim",
+				"estimates"
+			],
+			[
+				"my",
+				"my_current_output"
+			],
+			[
+				"match",
+				"match_my_action"
+			],
+			[
+				"agent",
+				"agent_current_output"
+			],
+			[
+				"age",
+				"agent_next_output"
+			],
+			[
+				"first",
+				"first_play"
+			],
+			[
+				"path",
+				"path_matrix"
+			],
+			[
+				"_scori",
+				"_scoring_rounds_start"
+			],
+			[
+				"st",
+				"stupid_decisions"
+			],
+			[
+				"predicted",
+				"predicted_output"
+			],
+			[
+				"play",
+				"play_flag"
+			],
+			[
+				"agent_",
+				"agent_past"
+			],
+			[
+				"num",
+				"num_states"
+			],
+			[
+				"h",
+				"h_r"
+			],
+			[
+				"Gr",
+				"Gr_dB"
+			],
+			[
+				"G",
+				"Gt_dB"
+			],
+			[
+				"P",
+				"Pt_dBW"
+			],
+			[
+				"RX2",
+				"RX2_IDX"
+			],
+			[
+				"RX_",
+				"RX_TIMEOUT_UUS"
+			],
+			[
+				"TX_",
+				"TX_TO_RX_DLY_UUS"
+			],
+			[
+				"clock",
+				"clockOffset"
+			],
+			[
+				"carrier",
+				"carrierintegrator"
+			],
+			[
+				"carr",
+				"carrierintegrator"
+			],
+			[
+				"save",
+				"saveChannelInfoToFile"
+			],
+			[
+				"cop",
+				"copyChannelInfo"
+			],
+			[
+				"exchange",
+				"exchangeNo"
+			],
+			[
+				"DW",
+				"DWT_ERROR"
+			],
+			[
+				"dela",
+				"delayed_tx_time"
+			],
+			[
+				"RX",
+				"RX_TO_TX_DLY_UUS"
+			],
+			[
+				"nex",
+				"next_delayed_tx"
+			],
+			[
+				"SP",
+				"SPEED_OF_LIGHT"
+			],
+			[
+				"ts",
+				"ts_struct"
+			],
+			[
+				"time",
+				"timestamps"
+			],
+			[
+				"TX2",
+				"TX2_IDX"
+			],
+			[
+				"RX1",
+				"RX1_IDX"
+			],
+			[
+				"ti",
+				"timestamps"
+			],
+			[
+				"tx",
+				"tx_timestamp"
+			],
+			[
+				"timesta",
+				"timestamps"
+			],
+			[
+				"ne",
+				"next_delayed_tx"
+			],
+			[
+				"delayed",
+				"delayedTXTime"
+			],
+			[
+				"syste",
+				"get_system_timestamp_u64"
+			],
+			[
+				"ld_",
+				"lde_ppampl"
+			],
+			[
+				"diag",
+				"diagnostics"
+			],
+			[
+				"ci",
+				"cir_struct"
+			],
+			[
+				"uint",
+				"uint64"
+			],
+			[
+				"pp",
+				"lde_ppampl"
+			],
+			[
+				"lde",
+				"lde_cfg1"
+			],
+			[
+				"exca",
+				"exchangeNo"
+			],
+			[
+				"complete",
+				"completeChannelInfo"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"rx2",
+				"rx2_msg"
+			],
+			[
+				"TX1",
+				"TX1_IDX"
+			],
+			[
+				"TX",
+				"TX_TO_RX_DLY_UUS"
+			],
+			[
+				"respo",
+				"responderTask"
+			],
+			[
+				"to",
+				"toRead"
+			],
+			[
+				"CIR",
+				"CIR_SAMPLES"
+			],
+			[
+				"dw",
+				"dw1000_ds_twr_resp"
+			],
+			[
+				"nr",
+				"nrBS"
+			],
+			[
+				"algor",
+				"algorithmicif"
+			],
+			[
+				"PLL",
+				"PLL_lock_flag"
+			],
+			[
+				"port",
+				"portTICK_PERIOD_MS"
+			],
+			[
+				"vTask",
+				"vTaskDelay"
+			],
+			[
+				"xSema",
+				"xSemaphoreTake"
+			],
+			[
+				"CSAC",
+				"CSAC_lock_flag"
+			],
+			[
+				"vt",
+				"vTaskSuspend"
+			],
+			[
+				"xBS",
+				"xBSemaphore_CSAC_PLL"
+			],
+			[
+				"uart",
+				"uart_console_state_t"
+			],
+			[
+				"csac",
+				"csac_get_state"
+			],
+			[
+				"xTas",
+				"xTaskGetTickCount"
+			],
+			[
+				"SDK",
+				"SDK_DIR"
+			],
+			[
+				"KINE",
+				"KINETIS_SDK_DIR"
+			],
+			[
+				"Gdb",
+				"GdbServerFlags"
+			],
+			[
+				"gdb",
+				"GdbServer"
+			],
+			[
+				"TO",
+				"TO_NATIVE_PATH"
+			],
+			[
+				"Project",
+				"PROJECT_NAME"
+			],
+			[
+				"PROJET",
+				"PROJECT_NAME"
+			],
+			[
+				"PROJECT",
+				"PROJECT_NAME"
+			],
+			[
+				"D",
+				"DbgConsole_Printf"
+			],
+			[
+				"t_repl",
+				"t_reply2"
+			],
+			[
+				"RES",
+				"RESP2_MSG"
+			],
+			[
+				"DEV",
+				"DEVNO"
+			],
+			[
+				"init_",
+				"init_rx_ts"
+			],
+			[
+				"INI",
+				"INIT_MSG"
+			],
+			[
+				"dwt_",
+				"dwt_readrxtimestamp"
+			],
+			[
+				"dwt_read",
+				"dwt_read32bitreg"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"UARTCo",
+				"UARTConsole_Printf"
+			],
+			[
+				"UART",
+				"UARTConsole_Printf"
+			],
+			[
+				"CLOCK_Get",
+				"CLOCK_GetCoreSysClkFreq"
+			],
+			[
+				"s_",
+				"s_debugConsole"
+			],
+			[
+				"number",
+				"number1"
+			],
+			[
+				"numb",
+				"number1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.log",
+			"settings":
+			{
+				"buffer_size": 7693,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"package ",
+				"Package Control: Disable Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeClang Settings – User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Add Channel"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"view.encoding()",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/adwait/Workspace/papers/openchirp_demo_ipsn18"
+	],
+	"file_history":
+	[
+		"/Users/adwait/Workspace/papers/pulsar_rtas17/Makefile",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_setup/lora-gateway-pf/global_conf.json",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_setup/lora-gateway-pf/aux/global_conf_us915.json",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_setup/radio2_setup_spi_dump.csv",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_setup/radio1_setup_spi_dump.csv",
+		"/Users/adwait/Downloads/fw_tew-828dru_v1(1.0.6.0)/TRENDnet Release Notes.txt",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_data/GSIA_packets_received.txt",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_data/GSIA_packets_received.json",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_data/README.md",
+		"/Users/adwait/Workspace/charm-ipsn18/gateway_data/Wean_tarnsducers.txt",
+		"/Users/adwait/Downloads/dd-wrtfw_tew-828dru_v1(v3-r27490)/Release Info.txt",
+		"/Users/adwait/Workspace/sensorbug_firmware/LoRaBug_Firmware/Firmware_LoRaMAC/LoRaMac-node/readme.md",
+		"/Users/adwait/Workspace/sensorbug_firmware/LoRaBug_Firmware/README.md",
+		"/Users/adwait/Workspace/testing/fucking_dylibs/fucking_library.c",
+		"/Users/adwait/Workspace/testing/fucking_dylibs/fucking_test.c",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/build/src/samples/Makefile",
+		"/Users/adwait/Workspace/testing/fucking_dylibs/include/fucking_library.h",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/src/samples/paho_c_pub.c",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/build/src/Makefile",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/src/MQTTVersion.c",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/test/test1.c",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/test/CMakeLists.txt",
+		"/Users/adwait/Workspace/testing/mqtt/paho.mqtt.c/test/test1",
+		"/usr/include/time.h",
+		"/usr/include/machine/limits.h",
+		"/usr/include/i386/limits.h",
+		"/usr/local/etc/mosquitto/mosquitto.conf",
+		"/Users/adwait/.ssh/config",
+		"/Users/adwait/Workspace/testing/mqtt/eclipse-paho-mqtt-c-mac-1.2.0/build/Makefile",
+		"/Users/adwait/Downloads/eclipse-paho-mqtt-c-mac-1.2.0/samples/CMakeLists.txt",
+		"/Users/adwait/Workspace/testing/mqtt/paho_callback.py",
+		"/Users/adwait/Workspace/testing/mqtt/paho_publish.py",
+		"/Users/adwait/Workspace/testing/mqtt/multi_pub.sh",
+		"/Users/adwait/Downloads/boot.py",
+		"/Users/adwait/Downloads/sefikakutou.html",
+		"/Users/adwait/Downloads/-.txt",
+		"/Users/adwait/Workspace/testing/dw_cir/test1_100_cir.bin",
+		"/Users/adwait/testFile.txt",
+		"/Users/adwait/Downloads/840b1d86-802e-4227-be14-b6d08d0fd9b8",
+		"/Users/adwait/Workspace/testing/interrupt_test.c",
+		"/Users/adwait/Workspace/dw1000_rpi/src/radar_rx.c",
+		"/Users/adwait/Workspace/dw1000_rpi/.git/MERGE_MSG",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/code/Game_2p.py",
+		"/Users/adwait/Workspace/dw1000_rpi/src/deca_device_api.h",
+		"/Users/adwait/Workspace/dw1000_rpi/src/Makefile",
+		"/Users/adwait/Workspace/dw1000_rpi/.git/COMMIT_EDITMSG",
+		"/Users/adwait/Workspace/testing/arg_test.c",
+		"/Users/adwait/Workspace/dw1000_rpi/README.md",
+		"/Users/adwait/Workspace/dw1000_rpi/src/dw1000_tx.c",
+		"/Users/adwait/Workspace/dw1000_rpi/src/radar_tx.c",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/.git/MERGE_MSG",
+		"/Users/adwait/Workspace/dw1000_rpi/decawave_rpi.sublime-project",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/.git/COMMIT_EDITMSG",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/basicRadio/.gitignore",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/basicRadio/send_script.sh",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/.git/COMMIT_EDITMSG",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/code/ProbabilisticStateMachine.py",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/code/Guesser/Guesser.py",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/hurdle3_package/Guesser/Guesser.py",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/hurdle3_package/Game_2p.py",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/hurdle3_package/ProbabilisticStateMachine.py",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/.gitignore",
+		"/Users/adwait/Dropbox/hurdles/Hurdle3/hurdle3_package/Game-2p.py",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/.gitignore",
+		"/Users/adwait/Dropbox/Academics/Wireless Communication/758_Project/StudentUSRPdemo/samplesignals/.gitignore",
+		"/Users/adwait/.ssh/known_hosts",
+		"/Volumes/boot/config.txt",
+		"/Users/adwait/Workspace/cv/deedy-resume-openfont.cls",
+		"/Users/adwait/Workspace/cv/main.tex",
+		"/Users/adwait/Workspace/cv/.gitignore",
+		"/Users/adwait/Workspace/cv/Makefile",
+		"/Users/adwait/Workspace/Hurdle2/package/Hurdle2_data/truth_labels.py",
+		"/Users/adwait/Workspace/Hurdle2/package/Hurdle2_data/11_15_truth.txt",
+		"/Users/adwait/Workspace/Hurdle2/package/Hurdle2_data/truth_1.md",
+		"/Users/adwait/Workspace/Hurdle2/package/read_complex_binary.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.log",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX Log.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2385.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "openchirp_demo_ipsn18.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fsl_dspi_free",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_dspi_freertos.h"
+			],
+			[
+				"fsl_dspi.h",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_dspi.h"
+			],
+			[
+				"pulsar_three_msg/main",
+				"projects/pulsar_three_msg/src/main.c"
+			],
+			[
+				"pulsar_freertos_uart/pulsar_board",
+				"projects/pulsar_freertos_uart/src/pulsar_board.h"
+			],
+			[
+				"freertos_8.2.3/source/portable/gcc/arm_cm4f/port.c",
+				"kinetis_sdk/rtos/freertos_8.2.3/Source/portable/GCC/ARM_CM4F/port.c"
+			],
+			[
+				"port",
+				"kinetis_sdk/devices/MK22F51212/dw1000_api_rev1p01/platform/port.h"
+			],
+			[
+				"sl_uart_free",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_uart_freertos.h"
+			],
+			[
+				"kinetis_sdk/tools/gdb/init.gdb",
+				"kinetis_sdk/tools/gdb/init.gdb"
+			],
+			[
+				"projdefs",
+				"kinetis_sdk/rtos/freertos_8.2.3/Source/include/projdefs.h"
+			],
+			[
+				"timers",
+				"kinetis_sdk/rtos/freertos_8.2.3/Source/include/timers.h"
+			],
+			[
+				"board.c",
+				"projects/ftm_test/src/board.c"
+			],
+			[
+				"init.gdb",
+				"kinetis_sdk/tools/gdb/init.gdb"
+			],
+			[
+				"ftm_test/cmakelis",
+				"projects/ftm_test/armgcc/CMakeLists.txt"
+			],
+			[
+				"link",
+				"projects/ftm_test/build/CMakeFiles/ftm_test.elf.dir/link.txt"
+			],
+			[
+				"link.txt",
+				"projects/ftm_test/build/CMakeFiles/ftm_test.elf.dir/link.txt"
+			],
+			[
+				"cmakefiles/ftm_test.elf.dir/link.txt",
+				"projects/ftm_test/build/CMakeFiles/ftm_test.elf.dir/link.txt"
+			],
+			[
+				"init",
+				"kinetis_sdk/tools/gdb/init.gdb"
+			],
+			[
+				"fsl_common.h",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_common.h"
+			],
+			[
+				"fsl_uart",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_uart.h"
+			],
+			[
+				"task",
+				"kinetis_sdk/rtos/freertos_8.2.3/Source/include/task.h"
+			],
+			[
+				"fsl_ftm.c",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_ftm.c"
+			],
+			[
+				"",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_ftm.h"
+			],
+			[
+				"ftm_test/board.h",
+				"projects/ftm_test/src/board.h"
+			],
+			[
+				"fsl_pit",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_pit.h"
+			],
+			[
+				"hello_world/board",
+				"kinetis_sdk/boards/frdmk22f/demo_apps/hello_world/board.h"
+			],
+			[
+				"hello_world/main",
+				"projects/hello_world/src/main.c"
+			],
+			[
+				"fsl_ftm.h",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_ftm.h"
+			],
+			[
+				"fsl_ftm",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_ftm.h"
+			],
+			[
+				"fsl_common",
+				"kinetis_sdk/devices/MK22F51212/drivers/fsl_common.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 362.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
