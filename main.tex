@@ -7,7 +7,7 @@
 \fi
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{balance}
+% \usepackage{balance}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{algpseudocode}
 % \usepackage{minipages}
@@ -67,87 +67,49 @@
 
 \begin{abstract}
 
-In this demonstartion, we first present OpenChirp, an open-source Low-Power Wide
-Area Networking (LPWAN) infrastructure.
-We also present LPRAN, a low-cost high-performance software-defined radio
-platform.
+In this demonstartion, we first present OpenChirp, an open-source Low-Power
+Wide Area Networking (LPWAN) infrastructure. OpenChirp's goal is to provide a
+completely open-source framework for a simple and rapidly deployable
+internet-of-things (IoT) network that is also scaleable, stable and modular.
+With a focus to enable research on the wireless physical layer, we also
+present LPRAN, a low-cost high-performance software-defined radio hardware
+platform that can receive signals upto -30 dB below the noise floor.
 
-
-In this demonstration we present Pulsar, a speed-of-light propagation-aware
-time synchronization platform. Pulsar uses ultra-wideband (UWB) radios for
-time transfer with each node backed by a chip scale atomic clock (CSAC) that
-in combination are able to provide accuracy on the order of 10's of
-nanoseconds for indoor applications. The demonstration will show two Pulsar
-boards generating a tightly synchronized PPS output that is able to adjust for
-the distance between the nodes. Even without communication, the devices
-maintain synchronization over multiple seconds due to a stable CSAC clocking
-the system.
 \end{abstract}
 
 \IEEEpeerreviewmaketitle
 
-
-
 % \section{Introduction}
 % \label{sec:intro}
-
-
-
 
 \section{System Description}
 \label{sec:system}
 
-{\color{red} The first few sections would be the equivalent of the intro.}
-
 Low Power Wide Area Networks (LP-WANs) are increasingly seen as an attractive
 communication platform for city-scale Internet-of-Things (IoT) deployments.
 They offer the ability to wirelessly connect energy-constrained devices to
-gateways over distances of many kilometers. LP-WANs also have power and cost
-advantages over alternatives like cellular networks, particularly in
-deploy-once, low-maintenance and low throughput sensing applications.
-
-What are we selling?
-
-% the goal of this demo abstract/demo is
-% 1. introduce researchers to OC
-%       functional city scale data collection framework
-%           data scientists ready
-%           city scale system integrator
-%       LoRa-ready
-%           gateways, sensor nodes (cots and custom/lorabug)
-%       open source software -> working on the packaging
-% 2. channel sniffing w/ LPRAN
-
-Completely open, easy to deploy LPWAN infrastructure
-
-It's here now and how you can you use it.
-
-% OC is for everyone
-% 1. scaling -> large scale (city scale)
-% 2. open source, security and user friendly
-%    bring your own gateway
-%    bring your own DB
-%    comm technology agnostics
-% 3. listening to more than just communcations (LPRAN)
-% 4. we deployed across a university campus
-
-Smart home devices are ubiquitous in today's home. However, current indoor
-communication technologies while great indoor, has limited ranges and power
-hungry.
+gateways over distances of many kilometers. Deployments with hundreds or
+thousands of devices on the network require a scaleable network
+infrastructure, to satisfactorily move data from constrained wireless devices
+to servers in the cloud and back. This infrastructure, consisting of primarily
+software, should ideally be stable, modular and completely open to support
+further research in the field. Additionally, to drive advancements in the
+wireless physical layer we need low-cost but high-performance radio devices
+that provide access to the raw radio signals.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.5\linewidth]{figures/gw-anon-sm}
     \\
     \includegraphics[width=0.8\linewidth]{figures/lpran-block_cropped}
-    \caption{{\color{red} Add caption}}
+    \caption{The LPRAN board and its functional block diagram.}
     \label{fig:lpran-photo}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=0.8\linewidth]{figures/LPRAN_spectrogram}
-    \caption{{\color{red} Add caption}}
+    \caption{The spectrogram of a weak LoRa transmission captured by the LPRAN device.}
     \label{fig:lpran-spectrogram}
 \end{figure}
 
@@ -159,23 +121,96 @@ hungry.
     \begin{minipage}[b]{.6\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/openChirp_architecture}
-        \caption{OpenChirp Architecture}
+        \caption{The OpenChirp Architecture}
         \label{fig:oc-arch}
     \end{minipage}%
     \begin{minipage}[b]{.4\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/OC_screenshot}
-        \caption{Screenshot of OpenChirp's web interface}
+        \caption{Screenshot of OpenChirp's web interface showing a typical
+        visualization of data from a LoRaWAN gateway}
         \label{fig:oc-screenshot}
     \end{minipage}
 \end{figure*}
 
+OpenChirp~\cite{dongare2017openchirp} is a completely open, end-to-end LPWAN
+architecture with the goal of simplifying the design and deployment of
+Internet-of-Things (IoT) devices. It currently supports the LoRa LPWAN
+(LoRaWAN) protocol~\cite{LoRaWanAlliance2015}, with future plans to support
+Bluetooth 5, IEEE 802.15.4 and other IoT communication protocols. OpenChirp
+aims to be easily deployable as a private or public network, with complete
+access to all frontend and backend components including the web interface,
+various data management services and APIs. Existing LPWAN solutions currently
+do not provide access to all components in their systems.
+
+OpenChirp's modular and scaleable architecture is shown in \figref{oc-arch}.
+An instance of OpenChirp can be accessed at \texttt{http://www.openchirp.io}.
+Next we describe some of it's important components.
+
+
+\subsubsection{MQTT interface}
+All LoRaWAN wireless devices communicate with gateways, which forward their
+data over the MQTT publish-subscribe protocol. MQTT communication is managed
+by a Mosquitto MQTT broker. Though only one broker is currently supported,
+further development is being made to support bridging multiple MQTT brokers
+together. Each device is represented by a topic to which various services,
+users and other devices could publish or subscribe to. LoRaWAN's Ack-based
+retransmission and MQTT's quality-of-service parameter ensure reliable
+transport of data between wireless devices and the cloud. All IoT devices are
+expected to communicate to OpenChirp through the MQTT interface.
+
+\subsubsection{HTTP REST interface}
+
+Users interact with OpenChirp through an HTTP REST interface. This
+includes operations such as adding and configuring devices and
+gateways, generating unique device IDs and access tokens, downloading data
+published by a given device, etc. Various web interfaces, command line tools
+and apps are expected to interact with OpenChirp through the REST interface.
+All HTTP requests are handled by a node server.
+
+\subsubsection{Services}
+
+Services are responsible for acting on incoming data and performing various
+operations on it. They enable adding inelligence to an otherwise simple
+network. Devices register to available services when they are configured,
+which informs a service to publish or subscribe to it's topics. Services can
+then perform important operations, such as store data, generate plots, extract
+packetd data etc. based on incoming data or user requests. A LoRAWAN server
+service~\cite{loraserver} and data storage service (implemented with InfluxDB)
+are already implemented and activated in OpenChirp. Other services such as a
+deserializer to unpack data and a GPS mapping service can also be enabled.
+Additionally, custom services can be developed using an open API and run on
+any external servers.
+
+\subsubsection{Authentication and Sharing}
+
+Authentication is managed by OAuth integration to Google accounts. Further
+developments are being made to allow other options like LDAP, etc. OpenChirp
+allows sharing devices and device data between users. To share a device, the
+device owner can provide publish and subscribe access to a device's topics.
+
+\subsubsection{Web Interface}
+
+The web interface provides a rapid way to login to OpenChirp, add and manage
+devices and to visualize various forms of data gathered by devices. An example
+of the web interface implemented with AngularJS is shown in
+\figref{oc-screenshot}.
+
 \subsection{LPRAN Architecture}
 \label{sec:lpran-arch}
 
+LPRAN, shown in \figref{lpran-photo}, is an auxiliary hardware module
+developed for LPWAN gateways, which mimics the functionality of a
+software-defined radio at a significantly lower-cost. By providing access to
+raw radio signals, it enables interesting application like coherent
+combining~\cite{charm2018underreview}.
 
-
-{\color{red} Add system diagram and photo}
+LPRAN's high-performance radio frontend is a Semtech SX1257~\cite{sx1257} chip
+(that can detect signals upto -30 dB below the noise floor) that outputs the raw radio I/Q
+signals as a sigma-delta modulated stream. An onboard FPGA and RaspberryPi 3
+perform additional signal processing to convert the stream into a usable form.
+An example of a signal captured by the LPRAN hardware is shown in
+\figref{lpran-spectrogram}.
 
 \section{Demonstration}
 \label{sec:demo}
@@ -188,28 +223,23 @@ deployment and management of a LoRa LPWA research network.
 
 We will demonstrate the ease and simplicity of adding and managing LoRaWAN
 devices as well as gateways using the OpenChirp network interface. We plan to
-deploy multiple wireless LoRa devices across the demo area and be able to log
-and visualize data using the OpenChirp interface. We use a combination of
-commercial off-the-shelf devices (e.g. PyCom LoPy) as well as some custom
-LoRaBug devices~\cite{dongare2017openchirp}, that can log sensor values and
-perform simple actuations.
+deploy multiple wireless LoRa devices (both commertial-off-the-shelf PyCom
+LoPy and custom LoRaBug devices) across the demo area and be able to log and
+visualize data using OpenChirp.
 
-An illustration of this setup is shown in {\color{red} CREATE FIGURE FOR THIS
-SETUP}.
 
 \subsection{LPRAN Micro-SDR Platform}
 \label{sec:lpran-demo}
 
-What do we say here?
-
-We will demonstrate
-
+We will demonstrate a combination of a LPRAN board and a RaspberryPi 3
+listening to a LoRa transmission and providing the raw radio signals as well
+as a spectrogram of the reception.
 
 \section*{Acknowledgment}
 
-
-The authors would like to thank...
-
+The authors would like to thank everyone working on OpenChirp, Swarun Kumar
+for various insights about the physical layer, Orne Brocar for developing the
+LoRa server, and {\color{red} XYZ} agency.
 
 \balance
 \bibliographystyle{unsrt}
