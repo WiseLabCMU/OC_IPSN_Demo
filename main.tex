@@ -68,12 +68,12 @@
 \begin{abstract}
 
 In this demonstartion, we first present OpenChirp, an open-source Low-Power
-Wide Area Networking (LPWAN) infrastructure. OpenChirp's goal is to provide a
+Wide Area Networking (LPWAN) infrastructure. OpenChirp provides a
 completely open-source framework for a simple and rapidly deployable
-internet-of-things (IoT) network that is also scaleable, stable and modular.
+internet-of-things (IoT) network that is also stable, modular and scaleable.
 With a focus to enable research on the wireless physical layer, we also
 present LPRAN, a low-cost high-performance software-defined radio hardware
-platform that can receive signals upto -30 dB below the noise floor.
+platform that can receive signals up to -30~dB below the noise floor.
 
 \end{abstract}
 
@@ -118,13 +118,13 @@ that provide access to the raw radio signals.
 
 \begin{figure*}[!htb]
     \centering
-    \begin{minipage}[b]{.6\textwidth}
+    \begin{minipage}[c]{.65\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/openChirp_architecture}
         \caption{The OpenChirp Architecture}
         \label{fig:oc-arch}
     \end{minipage}%
-    \begin{minipage}[b]{.4\textwidth}
+    \begin{minipage}[c]{.35\textwidth}
         \centering
         \includegraphics[width=\linewidth]{figures/OC_screenshot}
         \caption{Screenshot of OpenChirp's web interface showing a typical
@@ -155,7 +155,7 @@ by a Mosquitto MQTT broker. Though only one broker is currently supported,
 further development is being made to support bridging multiple MQTT brokers
 together. Each device is represented by a topic to which various services,
 users and other devices could publish or subscribe to. LoRaWAN's Ack-based
-retransmission and MQTT's quality-of-service parameter ensure reliable
+re-transmission and MQTT's quality-of-service parameter ensure reliable
 transport of data between wireless devices and the cloud. All IoT devices are
 expected to communicate to OpenChirp through the MQTT interface.
 
@@ -171,11 +171,10 @@ All HTTP requests are handled by a node server.
 \subsubsection{Services}
 
 Services are responsible for acting on incoming data and performing various
-operations on it. They enable adding inelligence to an otherwise simple
+operations on it. They enable adding intelligence to an otherwise simple
 network. Devices register to available services when they are configured,
 which informs a service to publish or subscribe to it's topics. Services can
-then perform important operations, such as store data, generate plots, extract
-packetd data etc. based on incoming data or user requests. A LoRAWAN server
+then perform important operations, such as store data, generate plots, extract data packet etc. based on incoming data or user requests. A LoRAWAN server
 service~\cite{loraserver} and data storage service (implemented with InfluxDB)
 are already implemented and activated in OpenChirp. Other services such as a
 deserializer to unpack data and a GPS mapping service can also be enabled.
@@ -206,8 +205,8 @@ raw radio signals, it enables interesting application like coherent
 combining~\cite{charm2018underreview}.
 
 LPRAN's high-performance radio frontend is a Semtech SX1257~\cite{sx1257} chip
-(that can detect signals upto -30 dB below the noise floor) that outputs the raw radio I/Q
-signals as a sigma-delta modulated stream. An onboard FPGA and RaspberryPi 3
+(that can detect signals up to -30 dB below the noise floor) that outputs the raw radio I/Q
+signals as a sigma-delta modulated stream. An on-board FPGA and Raspberry Pi 3
 perform additional signal processing to convert the stream into a usable form.
 An example of a signal captured by the LPRAN hardware is shown in
 \figref{lpran-spectrogram}.
@@ -223,7 +222,7 @@ deployment and management of a LoRa LPWA research network.
 
 We will demonstrate the ease and simplicity of adding and managing LoRaWAN
 devices as well as gateways using the OpenChirp network interface. We plan to
-deploy multiple wireless LoRa devices (both commertial-off-the-shelf PyCom
+deploy multiple wireless LoRa devices (both commercial-off-the-shelf PyCom
 LoPy and custom LoRaBug devices) across the demo area and be able to log and
 visualize data using OpenChirp.
 
@@ -231,13 +230,13 @@ visualize data using OpenChirp.
 \subsection{LPRAN Micro-SDR Platform}
 \label{sec:lpran-demo}
 
-We will demonstrate a combination of a LPRAN board and a RaspberryPi 3
+We will demonstrate a combination of a LPRAN board and a Raspberry Pi 3
 listening to a LoRa transmission and providing the raw radio signals as well
 as a spectrogram of the reception.
 
 \section*{Acknowledgment}
 
-The authors would like to thank everyone working on OpenChirp, Swarun Kumar
+The authors would like to thank everyone working on OpenChirp, Prof. Swarun Kumar
 for various insights about the physical layer, Orne Brocar for developing the
 LoRa server, and {\color{red} XYZ} agency.
 
@@ -250,7 +249,7 @@ LoRa server, and {\color{red} XYZ} agency.
 
 The demonstration requires a power connection (with multiple plugs), a screen,
 keyboard and mouse. A stable internet connection would be preferable, but not
-essential. This demonstartion will use multiple battery-powered wireless
+essential. This demonstration will use multiple battery-powered wireless
 transmitters in the 868 MHz ISM spectrum.
 
 \end{document}
