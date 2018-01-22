@@ -10,6 +10,7 @@
 \usepackage{balance}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{algpseudocode}
+% \usepackage{minipages}
 
 \newcommand{\compactimg}{\vspace{-10pt}}
 \newcommand{\tableref}[1]{Table~\ref{tab:#1}}
@@ -87,8 +88,16 @@ the system.
 
 
 
-\section{Introduction}
-\label{sec:intro}
+% \section{Introduction}
+% \label{sec:intro}
+
+
+
+
+\section{System Description}
+\label{sec:system}
+
+{\color{red} The first few sections would be the equivalent of the intro.}
 
 Low Power Wide Area Networks (LP-WANs) are increasingly seen as an attractive
 communication platform for city-scale Internet-of-Things (IoT) deployments.
@@ -126,15 +135,40 @@ Smart home devices are ubiquitous in today's home. However, current indoor
 communication technologies while great indoor, has limited ranges and power
 hungry.
 
-
-\section{System Description}
-\label{sec:system}
-
 \subsection{OpenChirp Architecture}
 \label{sec:oc-arch}
 
+
+% \begin{figure*}[htb!]
+%   \centering
+%     \includegraphics[width=0.6\textwidth]{figures/openChirp_architecture.pdf}
+%   \caption{OpenChirp Architecture}
+%   \label{fig:oc-arch}
+% \end{figure*}
+
+\begin{figure*}[!htb]
+    \centering
+    \begin{minipage}[b]{.6\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/openChirp_architecture}
+        \caption{OpenChirp Architecture}
+        \label{fig:oc-arch}
+    \end{minipage}%
+    \begin{minipage}[b]{.4\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/OC_screenshot}
+        \caption{Screenshot of OpenChirp's web interface}
+        \label{fig:oc-screenshot}
+    \end{minipage}
+\end{figure*}
+
+{\color{red} Add screenshot and architecture diagram}
+
+
 \subsection{LPRAN Architecture}
 \label{sec:lpran-arch}
+
+{\color{red} Add system diagram and photo}
 
 \section{Demonstration}
 \label{sec:demo}
@@ -161,7 +195,7 @@ SETUP}.
 
 What do we say here?
 
-
+We will demonstrate
 
 
 \section*{Acknowledgment}
@@ -177,8 +211,8 @@ The authors would like to thank...
 \section{Demo Requirements}
 \label{sec:requirements}
 
-The demonstration requires a power connection (with multiple plugs), monitor,
-keyboard and mouse. A stable internet connection is preferred, but not
+The demonstration requires a power connection (with multiple plugs), a screen,
+keyboard and mouse. A stable internet connection would be preferable, but not
 essential. This demonstartion will use multiple battery-powered wireless
 transmitters in the 868 MHz ISM spectrum.
 
