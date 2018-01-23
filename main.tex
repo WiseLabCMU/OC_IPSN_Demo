@@ -67,11 +67,11 @@
 
 \begin{abstract}
 
-In this demonstartion, we first present OpenChirp, an open-source Low-Power
+In this demonstration, we first present OpenChirp, an open-source Low-Power
 Wide Area Networking (LPWAN) infrastructure. OpenChirp provides a
 completely open-source framework for a simple and rapidly deployable
 internet-of-things (IoT) network that is also stable, modular and scaleable.
-With a focus to enable research on the wireless physical layer, we also
+With a focus to further enable research on the wireless physical layer, we also
 present LPRAN, a low-cost high-performance software-defined radio hardware
 platform that can receive signals up to -30~dB below the noise floor.
 
@@ -143,18 +143,18 @@ access to all frontend and backend components including the web interface,
 various data management services and APIs. Existing LPWAN solutions currently
 do not provide access to all components in their systems.
 
-OpenChirp's modular and scaleable architecture is shown in \figref{oc-arch}.
+OpenChirp's modularity and scaleabiltly are shown in \figref{oc-arch}.
 An instance of OpenChirp can be accessed at \texttt{http://www.openchirp.io}.
-Next we describe some of it's important components.
+Next, we describe some of its important components.
 
 
 \subsubsection{MQTT interface}
 All LoRaWAN wireless devices communicate with gateways, which forward their
 data over the MQTT publish-subscribe protocol. MQTT communication is managed
 by a Mosquitto MQTT broker. Though only one broker is currently supported,
-further development is being made to support bridging multiple MQTT brokers
+future development will include supports for bridging multiple MQTT brokers
 together. Each device is represented by a topic to which various services,
-users and other devices could publish or subscribe to. LoRaWAN's Ack-based
+users and other devices could publish or subscribe to. LoRaWAN's ACK-based
 re-transmission and MQTT's quality-of-service parameter ensure reliable
 transport of data between wireless devices and the cloud. All IoT devices are
 expected to communicate to OpenChirp through the MQTT interface.
@@ -173,7 +173,7 @@ All HTTP requests are handled by a node server.
 Services are responsible for acting on incoming data and performing various
 operations on it. They enable adding intelligence to an otherwise simple
 network. Devices register to available services when they are configured,
-which informs a service to publish or subscribe to it's topics. Services can
+which informs a service to publish or subscribe to its topics. Services can
 then perform important operations, such as store data, generate plots, extract data packet etc. based on incoming data or user requests. A LoRAWAN server
 service~\cite{loraserver} and data storage service (implemented with InfluxDB)
 are already implemented and activated in OpenChirp. Other services such as a
